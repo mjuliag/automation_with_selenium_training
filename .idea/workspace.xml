@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42fe487e-1f83-43ca-b984-f3334f090639" name="Default Changelist" comment="" />
+    <list default="true" id="42fe487e-1f83-43ca-b984-f3334f090639" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/DropdownSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ElementDisplayed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/MultipleSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/WorkingWithElementsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,120 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/IdXPATHDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/IdNameDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" selection-start-line="8" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/FindByLinkText.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" selection-start-line="11" selection-end-line="16" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/FindByClassName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" selection-start-line="10" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/JUnitExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-              <folding>
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Excercise1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="28" selection-start-line="12" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BasicActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/NavigatingBetweenPages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="15" selection-start-line="16" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/ElementState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/RadioButtonsAndCheckBoxes.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/ElementDisplayed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="56" column="91" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+            <state relative-caret-position="112">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,6 +41,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -158,6 +58,10 @@
         <option value="$PROJECT_DIR$/src/com/company/NavigatingBetweenPages.java" />
         <option value="$PROJECT_DIR$/src/com/company/ElementState.java" />
         <option value="$PROJECT_DIR$/src/com/company/RadioButtonsAndCheckBoxes.java" />
+        <option value="$PROJECT_DIR$/src/com/company/WorkingWithElementsList.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DropdownSelect.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MultipleSelect.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ElementDisplayed.java" />
       </list>
     </option>
   </component>
@@ -167,6 +71,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -225,8 +130,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioButtonsAndCheckBoxes.test2">
-    <configuration name="BasicActions.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ElementDisplayed.testLetsKodeIt">
+    <configuration name="DropdownSelect.testDropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWebDriverSetupTest" />
       <extension name="coverage">
         <pattern>
@@ -235,14 +140,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.BasicActions" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DropdownSelect" />
+      <option name="METHOD_NAME" value="testDropdown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElementState.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ElementDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWebDriverSetupTest" />
       <extension name="coverage">
         <pattern>
@@ -251,14 +156,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.ElementState" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.company.ElementDisplayed" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementDisplayed.testLetsKodeIt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumWebDriverSetupTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.ElementDisplayed" />
+      <option name="METHOD_NAME" value="testLetsKodeIt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigatingBetweenPages.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultipleSelect.testMultiSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWebDriverSetupTest" />
       <extension name="coverage">
         <pattern>
@@ -267,14 +187,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.NavigatingBetweenPages" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MultipleSelect" />
+      <option name="METHOD_NAME" value="testMultiSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonsAndCheckBoxes.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkingWithElementsList.testListOfElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumWebDriverSetupTest" />
       <extension name="coverage">
         <pattern>
@@ -283,24 +203,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.RadioButtonsAndCheckBoxes" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioButtonsAndCheckBoxes.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumWebDriverSetupTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.RadioButtonsAndCheckBoxes" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="com.company.WorkingWithElementsList" />
+      <option name="METHOD_NAME" value="testListOfElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -308,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RadioButtonsAndCheckBoxes.test2" />
-        <item itemvalue="JUnit.RadioButtonsAndCheckBoxes.test" />
-        <item itemvalue="JUnit.ElementState.test" />
-        <item itemvalue="JUnit.NavigatingBetweenPages.test" />
-        <item itemvalue="JUnit.BasicActions.test" />
+        <item itemvalue="JUnit.ElementDisplayed.testLetsKodeIt" />
+        <item itemvalue="JUnit.ElementDisplayed" />
+        <item itemvalue="JUnit.MultipleSelect.testMultiSelect" />
+        <item itemvalue="JUnit.DropdownSelect.testDropdown" />
+        <item itemvalue="JUnit.WorkingWithElementsList.testListOfElements" />
       </list>
     </recent_temporary>
   </component>
@@ -330,35 +234,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NavigatingBetweenPages_test - 2019.10.25 at 15h 51m 46s.xml">
-      <configuration name="NavigatingBetweenPages.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElementState_test - 2019.10.25 at 16h 15m 16s.xml">
-      <configuration name="ElementState.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test - 2019.10.28 at 11h 48m 02s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test - 2019.10.28 at 11h 48m 42s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 02m 27s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 03m 45s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 05m 11s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 06m 38s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 07m 31s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 08m 55s.xml">
       <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkingWithElementsList_testListOfElements - 2019.10.28 at 14h 30m 39s.xml">
+      <configuration name="WorkingWithElementsList.testListOfElements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkingWithElementsList - 2019.10.28 at 14h 31m 28s.xml">
+      <configuration name="WorkingWithElementsList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkingWithElementsList_testListOfElements - 2019.10.28 at 14h 43m 09s.xml">
+      <configuration name="WorkingWithElementsList.testListOfElements" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DropdownSelect_testDropdown - 2019.10.28 at 15h 35m 56s.xml">
+      <configuration name="DropdownSelect.testDropdown" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultipleSelect_testMultiSelect - 2019.10.28 at 15h 50m 41s.xml">
+      <configuration name="MultipleSelect.testMultiSelect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElementDisplayed - 2019.10.28 at 16h 15m 45s.xml">
+      <configuration name="ElementDisplayed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElementDisplayed_testLetsKodeIt - 2019.10.28 at 16h 17m 35s.xml">
+      <configuration name="ElementDisplayed.testLetsKodeIt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElementDisplayed_testLetsKodeIt - 2019.10.28 at 16h 19m 57s.xml">
+      <configuration name="ElementDisplayed.testLetsKodeIt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElementDisplayed_testLetsKodeIt - 2019.10.28 at 16h 20m 31s.xml">
+      <configuration name="ElementDisplayed.testLetsKodeIt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -503,6 +407,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RadioButtonsAndCheckBoxes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/WorkingWithElementsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DropdownSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/NavigatingBetweenPages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -513,10 +447,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RadioButtonsAndCheckBoxes.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/MultipleSelect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="56" column="91" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+        <state relative-caret-position="272">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ElementDisplayed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
