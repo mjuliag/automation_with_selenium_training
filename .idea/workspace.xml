@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fe487e-1f83-43ca-b984-f3334f090639" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/DropdownSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ElementDisplayed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/MultipleSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/WorkingWithElementsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/ElementDisplayed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="535">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -234,9 +230,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RadioButtonsAndCheckBoxes_test2 - 2019.10.28 at 12h 08m 55s.xml">
-      <configuration name="RadioButtonsAndCheckBoxes.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WorkingWithElementsList_testListOfElements - 2019.10.28 at 14h 30m 39s.xml">
       <configuration name="WorkingWithElementsList.testListOfElements" configurationId="JUnit" />
     </history-entry>
@@ -264,10 +257,12 @@
     <history-entry file="ElementDisplayed_testLetsKodeIt - 2019.10.28 at 16h 20m 31s.xml">
       <configuration name="ElementDisplayed.testLetsKodeIt" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ElementDisplayed_testLetsKodeIt - 2019.10.28 at 16h 21m 46s.xml">
+      <configuration name="ElementDisplayed.testLetsKodeIt" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -278,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ElementDisplayed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="535">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
