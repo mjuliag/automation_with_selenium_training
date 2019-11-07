@@ -1,11 +1,14 @@
 package com.company.usefulmethods;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -13,9 +16,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 like we did in the GenericMethodsPreRefactor class
  */
 public class GenericMethods {
-    WebDriver driver;
+    static WebDriver driver;
 
-    public GenericMethods(WebDriver driver) {
+    public GenericMethods(WebDriver driver) throws IOException {
         this.driver = driver;
     }
 
@@ -121,6 +124,31 @@ public class GenericMethods {
             System.out.println("Element clicked");
         } catch (Exception e) {
             System.out.println("Element not appeared on the web page");
+        }
+    }
+
+    public String getRandomString(int length) {
+        StringBuilder sb = new StringBuilder();
+        String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        for (int i = 0; i < length; i++) {
+            int index = (int) (Math.random() * characters.length());
+            sb.append(characters.charAt(index));
+        }
+        return sb.toString();
+    }
+
+    public void takeScreenshot() throws IOException {
+        String fileName = getRandomString(10) + ".jpg";
+        String newDirectory = "C:\\Users\\JuliaGirona\\Desktop\\";
+
+        File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File destination = new File(newDirectory + fileName);
+
+        Path path = Files.copy(sourceFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        if (Files.exists(path)) {
+            System.out.println("File copied succesfully to " + destination);
+        } else {
+            System.out.println("Unable to copy file :(");
         }
     }
 }

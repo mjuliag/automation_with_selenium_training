@@ -5,23 +5,22 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import com.company.usefulmethods.GenericMethods;
 
-import java.io.File;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class Screenshots {
     private WebDriver driver;
     private String baseUrl;
+    private GenericMethods gm;
 
     @Before
     public void setUp() throws Exception {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         baseUrl = "https://www.expedia.com/";
+        gm = new GenericMethods(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -58,21 +57,11 @@ public class Screenshots {
     }
 
     @After
-    public void tearDown() throws Exception {
-        String fileName = getRandomString(10) + ".jpg";
-        String newDirectory = "C:\\Users\\JuliaGirona\\Desktop\\";
-
-        File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File destination = new File(newDirectory + fileName);
-        
-        Path path = Files.copy(sourceFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        if (Files.exists(path)) {
-            System.out.println("File copied succesfully to " + destination);
-        } else {
-            System.out.println("Unable to copy file :(");
-        }
-
+    public void tearDown() throws IOException {
+        gm.takeScreenshot();
         driver.quit();
     }
+
+
 }
 
