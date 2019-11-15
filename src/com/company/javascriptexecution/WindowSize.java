@@ -1,4 +1,4 @@
-package com.company.JavaScriptExecution;
+package com.company.javascriptexecution;
 
 import org.junit.After;
 import org.junit.Before;
