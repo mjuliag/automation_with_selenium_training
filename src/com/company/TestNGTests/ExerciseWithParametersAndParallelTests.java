@@ -1,29 +1,36 @@
-package com.company;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class BasicActions {
+public class ExerciseWithParametersAndParallelTests {
 
     WebDriver driver;
     String baseUrl;
 
-    @Before
-    public void setUp() {
-        //System.setProperty("webdriver.chrome.driver","C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\JuliaGirona\\geckodriver-win64\\geckodriver.exe");
-        //driver = new ChromeDriver();
-        driver = new FirefoxDriver();
-        baseUrl = "http://letskodeit.teachable.com";
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    @BeforeClass
+    @Parameters({"browser"})
+    public void setUp(String browser) {
+        baseUrl = "https://letskodeit.teachable.com";
+        if (browser.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.gecko.driver",
+                    "C:\\Users\\JuliaGirona\\geckodriver-win64\\geckodriver.exe");
+            driver = new FirefoxDriver();
+        } else if (browser.equalsIgnoreCase("chrome")) {
+            System.setProperty("webdriver.chrome.driver",
+                    "C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
+            driver = new ChromeDriver();
+        }
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(baseUrl);
     }
 
     @Test
@@ -44,7 +51,7 @@ public class BasicActions {
         Thread.sleep(3000);
     }
 
-    @After
+    @AfterClass
     public void tearDown() {
         driver.quit();
     }
