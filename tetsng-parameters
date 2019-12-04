@@ -6,7 +6,7 @@
         <parameter name="platform" value="mac"/>
         <parameter name="response" value="201,200"/>
         <classes>
-            <class name="TestNGParameters"/>
+            <class name="ParallelTestsAndParameters.TestNGParameters"/>
         </classes>
     </test>
 </suite>

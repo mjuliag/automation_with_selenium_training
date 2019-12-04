@@ -4,13 +4,13 @@
     <test name="Test Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="ExerciseWithParametersAndParallelTests"/>
+            <class name="ParallelTestsAndParameters.ExerciseWithParametersAndParallelTests"/>
         </classes>
     </test>
     <test name="Test Chrome">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="ExerciseWithParametersAndParallelTests"/>
+            <class name="ParallelTestsAndParameters.ExerciseWithParametersAndParallelTests"/>
         </classes>
     </test>
 </suite>

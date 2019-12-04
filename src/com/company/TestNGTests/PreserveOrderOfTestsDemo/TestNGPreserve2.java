@@ -1,3 +1,5 @@
+package PreserveOrderOfTestsDemo;
+
 import org.testng.annotations.Test;
 
 public class TestNGPreserve2 {
