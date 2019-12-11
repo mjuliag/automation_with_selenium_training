@@ -22,6 +22,7 @@ I didn't need to run this as a TestNG suite. Just running it from the class itse
 extent report as expected in the filepath provided.
  */
 public class SeleniumLoginTest {
+
     private WebDriver driver;
     private String baseUrl;
     ExtentReports report;
@@ -81,18 +82,18 @@ public class SeleniumLoginTest {
         test.log(LogStatus.PASS, "Verified Welcome Text");
     }
 
+    @AfterClass
+    public void afterClass() {
+        driver.quit();
+        report.endTest(test);
+        report.flush();
+    }
+
     private void dimissPopUp() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement popHTML = wait.until(ExpectedConditions.visibilityOfElementLocated
                 (By.id("comp-jgmoxwr2inlineContent")));
         WebElement overlayDiv = driver.findElement(By.id("p7kjtbalatabgcoloroverlay"));
         overlayDiv.click();
-    }
-
-    @AfterClass
-    public void afterClass() {
-        driver.quit();
-        report.endTest(test);
-        report.flush();
     }
 }

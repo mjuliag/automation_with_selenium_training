@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -150,5 +151,15 @@ public class GenericMethods {
         } else {
             System.out.println("Unable to copy file :(");
         }
+    }
+
+    //This method uses FileUtils from Apache Commons library
+    public static String takeScreenshot(WebDriver driver, String fileName) throws IOException {
+        fileName = fileName + ".png";
+        String directory = "C:\\Users\\JuliaGirona\\Desktop\\";
+        File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(sourceFile, new File(directory + fileName));
+        String destination = directory + fileName;
+        return destination;
     }
 }

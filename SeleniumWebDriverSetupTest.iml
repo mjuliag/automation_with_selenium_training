@@ -118,5 +118,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="com.relevantcodes:extentreports:2.41.2" level="project" />
+    <orderEntry type="library" name="commons-io:commons-io:2.1" level="project" />
   </component>
 </module>

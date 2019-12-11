@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<suite name="Extent TestSuite">
+    <test name="Chrome Test">
+        <classes>
+            <class name="ExtentReports.TestUsingExtentFactoryClass1"/>
+            <class name="ExtentReports.TestUsingExtentFactoryClass2"/>
+        </classes>
+    </test>
+</suite>
