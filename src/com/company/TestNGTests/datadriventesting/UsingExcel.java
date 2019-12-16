@@ -1,7 +1,7 @@
 package datadriventesting;
 
 import com.company.Constants;
-import com.company.ExcelUtility;
+import com.company.usefulmethods.ExcelUtility;
 import com.company.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

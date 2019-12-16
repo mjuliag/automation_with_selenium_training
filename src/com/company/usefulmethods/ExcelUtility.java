@@ -1,4 +1,4 @@
-package com.company;
+package com.company.usefulmethods;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -9,7 +9,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 
-//TODO move this class to maybe some utility package idk
 public class ExcelUtility {
     private static XSSFWorkbook ExcelWBook;
     private static XSSFSheet ExcelWSheet;
