@@ -1,5 +1,6 @@
 package ExtentReports;
 
+import com.company.HomePage;
 import com.company.usefulmethods.GenericMethods;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

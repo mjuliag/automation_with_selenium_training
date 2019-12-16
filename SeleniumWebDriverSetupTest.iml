@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/com/company/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/company/logs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/company/TestNGTests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/company/datadriventesting" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -119,5 +120,7 @@
     </orderEntry>
     <orderEntry type="library" name="com.relevantcodes:extentreports:2.41.2" level="project" />
     <orderEntry type="library" name="commons-io:commons-io:2.1" level="project" />
+    <orderEntry type="library" name="org.apache.poi:poi:4.1.0" level="project" />
+    <orderEntry type="library" name="org.apache.poi:poi-ooxml:4.1.0" level="project" />
   </component>
 </module>

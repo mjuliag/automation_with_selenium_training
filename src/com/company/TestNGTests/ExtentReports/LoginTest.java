@@ -1,5 +1,7 @@
 package ExtentReports;
 
+import com.company.ExtentFactory;
+import com.company.HomePage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;

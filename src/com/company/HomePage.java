@@ -1,4 +1,4 @@
-package ExtentReports;
+package com.company;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -22,6 +22,10 @@ public class HomePage {
     public HomePage(WebDriver driver, ExtentTest test) {
         this.driver = driver;
         this.test = test;
+    }
+
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
     }
 
     public void clickSignUpLink() {

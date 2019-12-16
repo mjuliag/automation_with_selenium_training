@@ -1,4 +1,4 @@
-package ExtentReports;
+package com.company;
 
 import com.relevantcodes.extentreports.ExtentReports;
 
