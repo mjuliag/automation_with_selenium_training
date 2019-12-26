@@ -2,9 +2,7 @@ package seleniumgrid;
 
 import com.company.automationframework.SearchPageFactory;
 import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -28,6 +26,14 @@ public class TestSuitBase {
         search = PageFactory.initElements(driver, SearchPageFactory.class);
     }
 
+    /*I have no idea how this works. I did it using a Docker image with Chrome, not a virtual machine like the tutorial
+    does.
+    The platform setting commented code is from a previous version in which the tutorial uses DesireCapabilities class
+    instead of Capabilities but I couldn't figure that out, I'm not sure if its needed or if its deprecated, but I
+    kept getting a Remote WebDriver UnreachableBrowserException and Capabilities errors.
+    The general idea of connecting to a remote web driver is the important stuff in this class.
+    TODO remember to change the nodeURL
+     */
     public static WebDriver getDriverInstance(String platform, String browser, String version, String url)
             throws MalformedURLException {
         String nodeURL = "http://localhost:4444/wd/hub";

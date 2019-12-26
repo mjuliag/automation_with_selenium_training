@@ -1,4 +1,4 @@
-package ExtentReports;
+package extentreports;
 
 import com.company.ExtentFactory;
 import com.company.HomePage;
@@ -14,7 +14,8 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestUsingExtentFactoryClass1 {
+public class LoginTest {
+
     private WebDriver driver;
     private String baseUrl;
     private ExtentReports report;
@@ -25,7 +26,6 @@ public class TestUsingExtentFactoryClass1 {
     public void beforeClass() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
         baseUrl = "http://www.letskodeit.com/";
-        //We initialize the report using the com.company.ExtentFactory class
         report = ExtentFactory.getInstance();
         test = report.startTest("Verify Welcome Text");
         driver = new ChromeDriver();

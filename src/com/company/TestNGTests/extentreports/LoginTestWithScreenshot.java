@@ -1,4 +1,4 @@
-package ExtentReports;
+package extentreports;
 
 import com.company.HomePage;
 import com.company.usefulmethods.GenericMethods;
@@ -46,7 +46,7 @@ public class LoginTestWithScreenshot {
 
     //TODO !!!
     /*
-    In order to make this test fail and take a screenshot we need to change some value in the ExtentReports.HomePage class, for
+    In order to make this test fail and take a screenshot we need to change some value in the extentreports.HomePage class, for
     example, changing the welcome text in the isWelcomeTextPresent() method.
      */
     @Test

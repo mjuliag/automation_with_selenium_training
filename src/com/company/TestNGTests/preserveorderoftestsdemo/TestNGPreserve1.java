@@ -1,4 +1,4 @@
-package PreserveOrderOfTestsDemo;
+package preserveorderoftestsdemo;
 
 import org.testng.annotations.Test;
 

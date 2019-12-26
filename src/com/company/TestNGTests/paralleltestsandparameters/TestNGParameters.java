@@ -1,4 +1,4 @@
-package ParallelTestsAndParameters;
+package paralleltestsandparameters;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

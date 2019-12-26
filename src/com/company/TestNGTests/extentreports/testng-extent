@@ -2,8 +2,8 @@
 <suite name="Extent TestSuite">
     <test name="Chrome Test">
         <classes>
-            <class name="ExtentReports.TestUsingExtentFactoryClass1"/>
-            <class name="ExtentReports.TestUsingExtentFactoryClass2"/>
+            <class name="extentreports.TestUsingExtentFactoryClass1"/>
+            <class name="extentreports.TestUsingExtentFactoryClass2"/>
         </classes>
     </test>
 </suite>

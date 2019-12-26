@@ -3,8 +3,8 @@
 <suite name="Preserve Enable TestSuite">
     <test name="Test 1" preserve-order="false">
         <classes>
-            <class name="PreserveOrderOfTestsDemo.TestNGPreserve2"/>
-            <class name="PreserveOrderOfTestsDemo.TestNGPreserve1"/>
+            <class name="preserveorderoftestsdemo.TestNGPreserve2"/>
+            <class name="preserveorderoftestsdemo.TestNGPreserve1"/>
         </classes>
     </test>
 </suite>
