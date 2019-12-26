@@ -3,7 +3,7 @@ package ParallelTestsAndParameters;
 import org.testng.annotations.Test;
 
 /*
-This class should be run with the testng-parallel.xml test suite with TestNG for the demo. We shouldn't user this
+This class should be run with the testng-parallel.xml test suite with TestNG for the demo. We shouldn't use this
 feature if we have methods that are dependent with each other!
  */
 public class TestNGParallel2 {
