@@ -119,5 +119,6 @@
     <orderEntry type="library" name="commons-io:commons-io:2.1" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi:4.1.0" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi-ooxml:4.1.0" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:8.0.19" level="project" />
   </component>
 </module>
