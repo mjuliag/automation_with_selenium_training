@@ -1,17 +1,25 @@
 package com.company.usefulmethods;
 
+import com.company.Constants;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ExcelUtility {
     private static XSSFWorkbook ExcelWBook;
     private static XSSFSheet ExcelWSheet;
+    private static XSSFCell cell;
+    private static XSSFRow row;
 
     /*
      * Set the File path, open Excel file
@@ -56,8 +64,8 @@ public class ExcelUtility {
             // Declare multi-dimensional array to capture the data from the table
             testData = new String[endRow - startRow + 1][endCol - startCol + 1];
 
-            for (int i=startRow; i<endRow+1; i++) {
-                for (int j=startCol; j<endCol+1; j++) {
+            for (int i = startRow; i < endRow + 1; i++) {
+                for (int j = startCol; j < endCol + 1; j++) {
                     // testData[i-startRow][j-startCol] = ExcelWSheet.getRow(i).getCell(j).getStringCellValue();
                     // For every column in every row, fetch the value of the cell
                     Cell cell = ExcelWSheet.getRow(i).getCell(j);
@@ -95,5 +103,96 @@ public class ExcelUtility {
         }
         // Return the cells array
         return cells;
+    }
+
+    /*
+     * Read the test data from the Excel cell
+     * @params - Row num and Col num
+     */
+    public static String getCellData(int RowNum, int ColNum) throws Exception {
+        try {
+            cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+            String cellData = cell.getStringCellValue();
+            return cellData;
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    /*
+     * Read the test data of date type from the Excel cell
+     * @params - Row num and Col num
+     */
+    public static String getDateCellData(int RowNum, int ColNum) throws Exception {
+        try {
+            cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+
+            Date dateValue = cell.getDateCellValue();
+            String dateStringFormat = df.format(dateValue);
+
+            return dateStringFormat;
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    /*
+     * Write in the Excel cell, String Result
+     * @params - Row num and Col num
+     */
+    public static void setCellData(String Result, int RowNum, int ColNum)
+            throws Exception {
+        try {
+            row = ExcelWSheet.getRow(RowNum);
+            if (row == null) {
+                row = ExcelWSheet.createRow(RowNum);
+            }
+            cell = row.getCell(ColNum);
+            if (cell == null) {
+                cell = row.createCell(ColNum);
+                cell.setCellValue(Result);
+            } else {
+                cell.setCellValue(Result);
+            }
+
+            // Open the file to write the results
+            FileOutputStream fileOut = new FileOutputStream(
+                    Constants.File_Path + Constants.File_Name);
+
+            ExcelWBook.write(fileOut);
+            fileOut.flush();
+            fileOut.close();
+        } catch (Exception e) {
+            throw (e);
+        }
+    }
+
+    /*
+     * Write in the Excel cell, double Result
+     * @params - Row num and Col num
+     */
+    public static void setCellData(double Result, int RowNum, int ColNum)
+            throws Exception {
+        try {
+            row = ExcelWSheet.getRow(RowNum);
+            cell = row.getCell(ColNum);
+            if (cell == null) {
+                cell = row.createCell(ColNum);
+                cell.setCellValue(Result);
+            } else {
+                cell.setCellValue(Result);
+            }
+
+            // Open the file to write the results
+            FileOutputStream fileOut = new FileOutputStream(
+                    Constants.File_Path + Constants.File_Name);
+
+            ExcelWBook.write(fileOut);
+            fileOut.flush();
+            fileOut.close();
+        } catch (Exception e) {
+            throw (e);
+        }
     }
 }

@@ -1,8 +1,0 @@
-12:27:53.550 DEBUG LoggingFile -Debug Message Logged
-12:27:53.552 ERROR LoggingFile -Error Message Logged
-12:27:53.552 FATAL LoggingFile -Fatal Message Logged
-15:17:31.239 TRACE log4j2tutorial.LoggingFile -Trace Message Logged
-15:17:31.241 DEBUG log4j2tutorial.LoggingFile -Debug Message Logged
-15:17:31.241 INFO  log4j2tutorial.LoggingFile -Info Message Logged
-15:17:31.241 ERROR log4j2tutorial.LoggingFile -Error Message Logged
-15:17:31.241 FATAL log4j2tutorial.LoggingFile -Fatal Message Logged

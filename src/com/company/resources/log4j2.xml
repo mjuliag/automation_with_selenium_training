@@ -12,19 +12,22 @@
                 <SizeBasedTriggeringPolicy size="100 KB"/>
             </Policies>
         </RollingFile>
-        <Console name="Console">
+        <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{1} -%msg%n"/>
         </Console>
     </Appenders>
     <Loggers>
-        <Root level="trace">
-            <AppenderRef ref="File"/>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
         </Root>
-        <Logger name="loggingfile" level="all" additivity="false">
+        <Logger name="loggingfile" level="info" additivity="false">
             <AppenderRef ref="File"/>
         </Logger>
         <Logger name="log4j2withanotherleveldemo" level="fatal" additivity="false">
             <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="performancetest" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
         </Logger>
     </Loggers>
 </Configuration>

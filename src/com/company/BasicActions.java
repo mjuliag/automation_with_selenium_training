@@ -17,10 +17,10 @@ public class BasicActions {
 
     @Before
     public void setUp() {
-        //System.setProperty("webdriver.chrome.driver","C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\JuliaGirona\\geckodriver-win64\\geckodriver.exe");
-        //driver = new ChromeDriver();
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.gecko.driver", "C:\\Users\\JuliaGirona\\geckodriver-win64\\geckodriver.exe");
+        driver = new ChromeDriver();
+        //driver = new FirefoxDriver();
         baseUrl = "http://letskodeit.teachable.com";
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
