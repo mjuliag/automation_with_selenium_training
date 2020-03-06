@@ -1,14 +1,11 @@
-package PerformanceTesting;
+package performancetesting;
 
 import com.company.Constants;
-import com.company.log4j2tutorial.LoggingFile;
 import com.company.usefulmethods.ExcelUtility;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.company.automationframework.SearchPageFactory;
-//import utilities.Constants;
-//import utilities.ExcelUtility;
 
 import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;

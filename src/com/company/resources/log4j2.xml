@@ -29,5 +29,8 @@
         <Logger name="performancetest" level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
+        <Logger name="performanceteststopwatch" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
     </Loggers>
 </Configuration>
