@@ -1,5 +1,8 @@
-package com.company.cucumberdemo;
+package com.company.cucumberdemo.stepdefinition;
 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,24 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-/*
-I didn't need to run this as a TestNG suite. Just running it from the class itselfs works fine and generates the
-extent report as expected in the filepath provided.
- */
-public class SeleniumLoginTest {
-
+public class TestingSteps {
     private WebDriver driver;
     private String baseUrl;
+    WebElement welcomeText = null;
 
-    @BeforeClass
-    public void beforeClass() {
+    @Given("^User is on the home page$")
+    public void user_is_on_the_home_page() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\JuliaGirona\\chromedriver_win32\\chromedriver.exe");
         baseUrl = "http://www.letskodeit.com/";
         driver = new ChromeDriver();
@@ -34,8 +29,8 @@ public class SeleniumLoginTest {
         dimissPopUp();
     }
 
-    @Test
-    public void test1_validLoginTest() throws Exception {
+    @When("^User enters username and password$")
+    public void user_enters_username_and_password() {
         WebElement signupLink = driver.findElement(By.id("comp-iiqg1vggactionTitle"));
         signupLink.click();
 
@@ -50,25 +45,16 @@ public class SeleniumLoginTest {
 
         WebElement goButton = driver.findElement(By.id("memberLoginDialogokButton"));
         goButton.click();
+    }
 
-        Thread.sleep(3000);
-
-        WebElement welcomeText = null;
-
-        WebElement logOut = driver.findElement(By.xpath("//*[@id=\"comp-iiqg1vggactionTitle\"]"));
-        logOut.click();
-        System.out.println("Login Successful");
-
+    @Then("^A welcome text is displayed$")
+    public void a_welcome_text_is_displayed() {
         try {
             welcomeText = driver.findElement(By.xpath("//div[text()='Hello test']"));
         } catch (NoSuchElementException e) {
             System.out.println(e.getMessage());
         }
         Assert.assertTrue(welcomeText != null);
-    }
-
-    @AfterClass
-    public void afterClass() {
         driver.quit();
     }
 
