@@ -19,7 +19,7 @@ import org.testng.annotations.AfterClass;
 
 // Sequel Pro - for Database
 // Driver Download - https://dev.mysql.com/downloads/connector/odbc/
-public class DatabaseTest {
+public class DatabaseTestUsingSystem {
     // Connection object
     static Connection conn = null;
     // Statement object
